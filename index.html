@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Profile - Replica</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #444;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #e2e2e2;
+        }
+        .header p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #bbb;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #e2e2e2;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+        }
+        .statistics ul, .team-history ul, .recent-matches ul, .achievements ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .statistics ul li, .team-history ul li, .recent-matches ul li, .achievements ul li {
+            background: #1e1e1e;
+            padding: 15px;
+            margin: 5px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #ccc;
+        }
+        .statistics ul li span {
+            color: #e2e2e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="placeholder.jpg" alt="Player Photo">
+            <div>
+                <h1>Player Name</h1>
+                <p>Age: <span>20</span></p>
+                <p>Country: <span>Country Name</span></p>
+            </div>
+        </div>
+
+        <div class="section statistics">
+            <h2>Statistics</h2>
+            <ul>
+                <li><span>Rating:</span> 1.25</li>
+                <li><span>Kills per round:</span> 0.85</li>
+                <li><span>Deaths per round:</span> 0.65</li>
+                <li><span>Headshot percentage:</span> 45%</li>
+                <li><span>Matches played:</span> 50</li>
+            </ul>
+        </div>
+
+        <div class="section team-history">
+            <h2>Team History</h2>
+            <ul>
+                <li>Team Alpha (2023 - Present)</li>
+                <li>Team Beta (2021 - 2023)</li>
+            </ul>
+        </div>
+
+        <div class="section recent-matches">
+            <h2>Recent Matches</h2>
+            <ul>
+                <li>Win vs Team X: 16-12</li>
+                <li>Loss vs Team Y: 14-16</li>
+                <li>Win vs Team Z: 16-10</li>
+            </ul>
+        </div>
+
+        <div class="section achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>MVP of Tournament A</li>
+                <li>Winner of Tournament B</li>
+                <li>Top 5 Player of 2023</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
