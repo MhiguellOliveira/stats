@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Profile - Replica</title>
     <style>
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: #ffffff;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(to bottom, #001f3f, #003366);
+            color: #ffffff;
+            margin: 0;
+        }
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 20px auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
+
         .header {
             display: flex;
             align-items: center;
             padding: 20px 0;
-            border-bottom: 1px solid #444;
+            border-bottom: 2px solid #004080;
         }
+
         .header img {
             border-radius: 50%;
             width: 150px;
@@ -30,41 +43,54 @@
             object-fit: cover;
             margin-right: 20px;
         }
+
         .header h1 {
             margin: 0;
             font-size: 2.5em;
             color: #e2e2e2;
         }
+
         .header p {
             margin: 5px 0;
             font-size: 1em;
             color: #bbb;
         }
+
         .section {
             margin: 20px 0;
         }
+
         .section h2 {
             font-size: 1.5em;
             margin-bottom: 10px;
             color: #e2e2e2;
-            border-bottom: 1px solid #444;
+            border-bottom: 2px solid #004080;
             padding-bottom: 5px;
         }
-        .statistics ul, .team-history ul, .recent-matches ul, .achievements ul {
-            list-style-type: none;
+
+        ul {
+            list-style: none;
             padding: 0;
         }
-        .statistics ul li, .team-history ul li, .recent-matches ul li, .achievements ul li {
-            background: #1e1e1e;
-            padding: 15px;
+
+        li {
+            background: #00264d;
+            padding: 10px;
             margin: 5px 0;
-            border: 1px solid #333;
+            border: 1px solid #004080;
             border-radius: 5px;
-            font-size: 1em;
             color: #ccc;
         }
-        .statistics ul li span {
+
+        li span {
             color: #e2e2e2;
+        }
+
+        .statistics, .team-history, .recent-matches, .achievements {
+            padding: 10px;
+            border: 1px solid #004080;
+            border-radius: 5px;
+            background: rgba(0, 32, 63, 0.9);
         }
     </style>
 </head>
